@@ -15,7 +15,7 @@ def make_browser(unit_id, treatment_id):
 # Control Group treatment
 def control_treatment(unit):
     unit.create_user('male')
-    visit_sites(site_file,delay=5)
+    unit.visit_sites(site_file,delay=5)
     #pass
 
 
