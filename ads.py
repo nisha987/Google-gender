@@ -39,7 +39,8 @@ class GoogleAdsSettingsUnit(browser_unit.BrowserUnit):
 	
 	def __init__(self, browser, log_file, unit_id, treatment_id, headless=False, proxy=None):
 		browser_unit.BrowserUnit.__init__(self, browser, log_file, unit_id, treatment_id, headless, proxy=proxy)
-
+		
+		
 
 	def create_user(self,gender):
 		if (gender=='male'):
@@ -50,18 +51,18 @@ class GoogleAdsSettingsUnit(browser_unit.BrowserUnit):
 			password = PASSWORD
 
 	self.driver.get("https://accounts.google.com")
-	login_email =self.find_elements_by_css_selector("#identifierId")
+	login_email =self.driver.find_elements_by_css_selector("#identifierId")
 	login_email.clear()
 	login_email.send_keys(user_mail)
 
-	login_next = self.find_elements_by_css_selector(".DL0QTb content.CwaK9 > span.RveJvd.snByac")
+	login_next = self.driver.find_elements_by_css_selector(".DL0QTb content.CwaK9 > span.RveJvd.snByac")
 	login_next.click()
 
-	login_password = self.find_elements_by_css_selector("div.aXBtI.I0VJ4d.Wic03c div.Xb9hP > input.whsOnd.zHQkBf")
+	login_password = self.driver.find_elements_by_css_selector("div.aXBtI.I0VJ4d.Wic03c div.Xb9hP > input.whsOnd.zHQkBf")
 	login_password.clear()
 	login_password.send_keys(password)
 
-	login_next2 =self.find_elements_by_css_selector(".DL0QTb > content.CwaK9")
+	login_next2 =self.driver.find_elements_by_css_selector(".DL0QTb > content.CwaK9")
 	login_next2.click()
 
 
