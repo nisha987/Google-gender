@@ -8,7 +8,7 @@ browser = webdriver.Firefox()
 browser.get('http://gmail.com')
 
 emailElem = browser.find_element_by_id('identifierId')
-emailElem.send_keys('16ucc063@lnmiit.ac.in')
+emailElem.send_keys('you gmail id')
 nextButton = browser.find_element_by_xpath(".//*[@id='identifierNext']/content/span")
 nextButton.click()
 
@@ -16,7 +16,7 @@ time.sleep(10)
 
 passwordElem = browser.find_element_by_xpath('/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/content[1]/section[1]/div[1]/content[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]')
 
-passwordElem.send_keys('7737028644')
+passwordElem.send_keys('yourpassword')
 
 signinButton = browser.find_element_by_css_selector('#passwordNext')
 signinButton.click()
