@@ -1,0 +1,2 @@
+https://realpython.com/modern-web-automation-with-python-and-selenium/
+https://www.youtube.com/watch?v=XqvCNYEqy34
